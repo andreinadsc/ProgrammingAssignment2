@@ -39,7 +39,6 @@ cacheSolve <- function(matrix, ...) {
     return(inverse)
   }
   data <- matrix$get()
-  return(data)
   inverse.new <- solve(data)
   matrix$setInverse(inverse.new)
   return(inverse.new)
